@@ -1,5 +1,12 @@
 <div align="justify">
 
+**Abstract**
+
+Wireless body area networks (WBANs) have emerged as a critical technology for continuous health monitoring, where transmission of physiological signals is essential. However, the heterogeneous nature of biomedical applications necessitates adaptive modulations of quality-of-service (QoS) parameters in user- or clinician-derived priorities. To address this challenge, we propose an adaptive framework, named \textit{AutoQoS}, that leverages a differential equation-based dynamical system to regulate the reporting sensitivity thresholds of the biosensors in real-time. By determining whether successive physiological measurements provide clinically distinct information, AutoQoS meets the user-defined, individual, and joint throughput and energy consumption requirements, enabling trade-offs between conserving communication resources and preserving clinically significant events. The framework is validated on the MIMIC-III biomedical dataset across vital signs, showing its ability to balance QoS control with competitive accuracy in predicting important health events in comparison with an existing baseline. Overall, AutoQoS is demonstrably capable of personalizing operations to patient-specific monitoring needs, bridging the gap between clinical relevance and resource utilization.
+</div>
+
+<div align="justify">
+
 ### __init__(self, env, ID, waypoints, my_coor)
 Initializes the simulation entity (base station, sensor node, or event generator) with its environment, ID, coordinates, and role-specific attributes.
 Sets up energy, routing, and event-handling parameters, and starts appropriate SimPy processes based on node type (B-, E-, or G-).
@@ -39,7 +46,7 @@ Handles local sensing activity at sensor nodes by detecting nearby events within
 Consumes energy per detection and logs sensed events for later transmission, reflecting real-world sensing workloads.
 
 
-## send(self)
+### send(self)
 Processes and transmits collected events toward the base station through multi-hop paths.
 Applies redundancy filtering, robust z-score normalization, and energy-based transmission cost models, ensuring efficient and low-latency data forwarding.
 </div>
