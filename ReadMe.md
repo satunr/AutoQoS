@@ -1,5 +1,5 @@
 
-# AutoQoS: Autonomous QoS Modulation in Wireless Body Area Networks
+## AutoQoS: Autonomous QoS Modulation in Wireless Body Area Networks
 
 <div align="justify">
 
